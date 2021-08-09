@@ -1,0 +1,91 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./reset.scss";
+@import "./fonts.scss";
+@import "./variables.scss";
+@import "./hamburgers/hamburgers.scss";
+@import "../js/components/Shape/Shape.scss";
+@import "../js/components/_Other/Layout/Layout.scss";
+@import "../js/components/Banner/Banner.scss";
+@import "../js/components/Header/Header.scss";
+@import "../js/components/Headings/Heading.scss";
+@import "../js/components/NavMenu/NavMenu.scss";
+@import "../js/components/Section/Section.scss";
+@import "../js/components/Button/Button.scss";
+@import "../js/components/Timeline/Timeline.scss";
+@import "../js/components/History/History.scss";
+@import "../js/components/HistoryInfo/HistoryInfo.scss";
+@import "../js/components/Event/Event.scss";
+@import "../js/components/Events/Events.scss";
+@import "../js/components/HallImage/HallImage.scss";
+@import "../js/components/Halls/Halls.scss";
+@import "../js/components/Statistics/Statistics.scss";
+@import "../js/components/Reserve/Reserve.scss";
+@import "../js/components/HallsBanner/HallsBanner.scss";
+@import "../js/components/HallsCarousel/HallsCarousel.scss";
+@import "../js/screens/Home/Home.scss";
+@import "../js/screens/About/About.scss";
+@import "../js/screens/Halls/Halls.scss";
+@import "../js/screens/Error404/Error404.scss";
+@import "../js/screens/Contact/Contact.scss";
+@import "../js/components/Footer/Footer.scss";
+@import "../../node_modules/react-alice-carousel/lib/scss/alice-carousel.scss";
+@import "../js/components/Spinner/Spinner.scss";
+@import "../js/components/_Other/Fallback/Fallback.scss";
+@import "../js/components/Toast/Toast.scss";
+
+:root {
+    scroll-padding-top: 50px;
+}
+input:focus,
+textarea:focus {
+    box-shadow: none !important;
+}
+section,
+#main {
+    background-color: $gray;
+}
+.cursor {
+    cursor: pointer;
+}
+.hide {
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+.show {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.show-half {
+    visibility: visible !important;
+    opacity: 0.5 !important;
+}
+::placeholder {
+    font-size: 13px;
+    font-family: MessinaSerif-Regular;
+    color: $placeholder;
+    text-align: left;
+}
+
+.custom-btn-container:hover .custom-btn-shape {
+    animation-name: button;
+    animation-timing-function: ease;
+}
+@keyframes button {
+    0% {
+        right: 26px;
+    }
+    100% {
+        right: 11px;
+    }
+}
+@keyframes button1 {
+    0% {
+        right: 26px;
+    }
+    100% {
+        right: 41px;
+    }
+}

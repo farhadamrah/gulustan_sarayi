@@ -1,0 +1,48 @@
+.custom-btn-shape {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    &.is-rotate {
+        transform: rotate(180deg) !important;
+    }
+    &-circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $gold;
+        position: absolute;
+    }
+    &-line {
+        width: 40px;
+        height: 2px;
+        background: $gold;
+        position: absolute;
+    }
+    &-arrow {
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-left: 8px solid $gold;
+        border-bottom: 5px solid transparent;
+        position: absolute;
+        left: 40px;
+        top: -5px;
+    }
+    &.is-white &-circle,
+    &.is-white &-line {
+        background: rgb(176, 176, 176) !important;
+    }
+    &.is-white &-arrow {
+        border-left: 8px solid rgb(176, 176, 176) !important;
+    }
+    &.is-gray &-circle,
+    &.is-gray &-line {
+        background: #5a5a5a !important;
+    }
+    &.is-gray &-arrow {
+        border-left: 8px solid #5a5a5a !important;
+    }
+}

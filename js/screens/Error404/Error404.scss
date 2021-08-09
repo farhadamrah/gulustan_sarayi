@@ -1,0 +1,22 @@
+.error-404 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $gray;
+    h1 {
+        color: white;
+        font-size: 155px;
+        font-family: BigShouldersStencilDisplay-Regular;
+        @media (max-width: $breakpoint-lg) {
+            font-size: 80px;
+        }
+        @media (max-width: $breakpoint-md) {
+            font-size: 60px;
+        }
+        @media (max-width: $breakpoint-sm) {
+            font-size: 40px;
+        }
+    }
+}

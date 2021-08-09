@@ -1,0 +1,151 @@
+.reserve {
+    padding: 20px 0 0 0;
+    &-button {
+        margin-top: 30px;
+    }
+    input,
+    textarea {
+        background: $form !important;
+        border: none !important;
+        resize: none;
+        color: $placeholder !important;
+    }
+    textarea {
+        padding-bottom: 55px !important;
+    }
+    &-shape {
+        position: absolute;
+        background: url("../../../../public/images/section5/shape.png")
+            center/cover no-repeat;
+        width: 12px;
+        height: 15px;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        &:first-child {
+            top: -7px;
+        }
+        &:last-child {
+            bottom: -7px;
+        }
+    }
+    &-calendar {
+        position: relative;
+        height: fit-content;
+        background: #262626 !important;
+        * {
+            color: #fff !important;
+            border: none !important;
+            box-shadow: none !important;
+            font-family: MessinaSerif-Regular !important;
+        }
+        .fc-header-toolbar {
+            padding-top: 10px !important;
+        }
+        .fc-highlight {
+            background: $gold !important;
+        }
+        .fc-daygrid-event {
+            background: $gold !important;
+        }
+        .fc-daygrid-day-top {
+            justify-content: center !important;
+        }
+        .fc-today-button {
+            display: none !important;
+        }
+        .fc-button {
+            background: none !important;
+            border: none !important;
+        }
+        table,
+        td,
+        th {
+            border: none !important;
+        }
+        td.fc-day-today {
+            background: none !important;
+            a {
+                color: $gold !important;
+            }
+        }
+        @media (max-width: $breakpoint-md) {
+            order: -1;
+            margin-bottom: 30px;
+        }
+        @media (max-width: $breakpoint-sm) {
+            .custom-btn-container .custom-btn {
+                padding: 0px 12px !important;
+                font-size: 12px !important;
+                letter-spacing: 2px !important;
+            }
+            .custom-btn-shape-line {
+                top: -7px;
+                width: 20px;
+                height: 1px;
+                background: #a39366;
+                position: absolute;
+                left: 18px;
+            }
+            .custom-btn-shape-circle {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: #a39366;
+                position: absolute;
+                top: -10px;
+                left: 15px;
+            }
+            .custom-btn-shape-arrow {
+                width: 0;
+                height: 0;
+                border-top: 4.5px solid transparent;
+                border-left: 6px solid #a39366;
+                border-bottom: 4.5px solid transparent;
+                position: absolute;
+                left: 34px;
+                top: -11px;
+            }
+        }
+    }
+    &-button {
+        @media (max-width: $breakpoint-md) {
+            margin-bottom: 30px !important;
+        }
+        @media (max-width: $breakpoint-md) {
+            .custom-btn-container .custom-btn {
+                padding: 0px 15px !important;
+                font-size: 12px !important;
+                letter-spacing: 2px !important;
+                font-family: PensumPro-Book;
+            }
+            .custom-btn-shape-line {
+                top: -7px;
+                width: 20px;
+                height: 1px;
+                background: #a39366;
+                position: absolute;
+                left: 18px;
+            }
+            .custom-btn-shape-circle {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: #a39366;
+                position: absolute;
+                top: -10px;
+                left: 15px;
+            }
+            .custom-btn-shape-arrow {
+                width: 0;
+                height: 0;
+                border-top: 4.5px solid transparent;
+                border-left: 6px solid #a39366;
+                border-bottom: 4.5px solid transparent;
+                position: absolute;
+                left: 34px;
+                top: -11px;
+            }
+        }
+    }
+}

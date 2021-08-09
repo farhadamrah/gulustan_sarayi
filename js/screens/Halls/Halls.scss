@@ -1,0 +1,83 @@
+.halls-position {
+    position: relative;
+    top: 80px;
+    .halls-number {
+        color: #a39366;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 100px;
+        line-height: 100%;
+        display: block;
+        text-align: center;
+        font-family: BigShouldersStencilDisplay-Regular;
+    }
+    h5 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 150%;
+        color: #fff;
+        text-align: center;
+        // font-family: "PensumPro-Regular";
+    }
+    .halls-border {
+        border-top: 1px dashed #a79269;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+        margin-top: 25px;
+        .symbol {
+            background-image: url("../../../../resources/images/section3/symbol.png");
+            display: block;
+            width: 13px;
+            height: 17px;
+        }
+        #symbol1 {
+            position: absolute;
+            top: -9px;
+            left: -9px;
+        }
+        #symbol3 {
+            position: absolute;
+            bottom: -8px;
+        }
+        .symbol-white {
+            background-image: url("../../../../resources/images/section3/symbol2.png");
+            display: block;
+            width: 13px;
+            height: 17px;
+            position: absolute;
+            bottom: -8px;
+            left: 47%;
+        }
+    }
+    .halls-write {
+        font-style: italic;
+        font-weight: 300;
+        font-size: 18px;
+        color: #fff;
+        margin-top: 22px;
+        text-align: center;
+        // font-family: "MessinaSerif-Regular";
+    }
+}
+
+@media (min-width: 280px) and (max-width: $breakpoint-md) {
+    .section {
+        height: 100%;
+        .halls-position {
+            top: 0;
+            .halls-number {
+                font-size: 50px;
+            }
+            h5 {
+                font-size: 17px;
+            }
+            .halls-write {
+                font-size: 15px;
+            }
+        }
+    }
+}

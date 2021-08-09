@@ -1,0 +1,163 @@
+.hallsCarousel-container {
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px;
+    align-content: start;
+    position: relative;
+    &-top {
+        flex: 0.9;
+        &-left {
+            flex: 0.45;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // padding: 0 15px;
+            @media (max-width: $breakpoint-sm) {
+                margin-bottom: 30px;
+            }
+            p {
+                margin: 0;
+                padding: 0;
+                color: #fff;
+            }
+            .headings {
+                text-align: left;
+                // p {
+                //     font-family: MessinaSerif-RegularItalic;
+                //     font-size: 22px;
+                //     transition: all 0.7s ease-in-out;
+                //     @media (max-width: $breakpoint-md) {
+                //         font-size: 12px;
+                //     }
+                // }
+                h3 {
+                    font-size: 100px;
+                    font-family: BigShouldersStencilDisplay-Regular;
+                    color: $gold;
+                    transition: all 0.7s ease-in-out;
+                    @media (max-width: $breakpoint-md) {
+                        font-size: 48px;
+                    }
+                    margin-bottom: 40px !important;
+                }
+                p {
+                    font-family: PensumPro-Book;
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                    transition: all 0.7s ease-in-out;
+                    width: 75% !important;
+                    @media (max-width: $breakpoint-md) {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .desc {
+                width: 80%;
+                position: relative;
+                @media (max-width: $breakpoint-md) {
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-family: PensumPro-Book;
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                    transition: all 0.7s ease-in-out;
+                    @media (max-width: $breakpoint-md) {
+                        font-size: 12px;
+                    }
+                }
+                .buttons {
+                    padding: 20px 30px;
+                    border: 1px solid #5a5a5a;
+                    width: 160px;
+                    border-radius: 20px;
+                    &-wrapper {
+                        position: relative;
+                        left: 46px;
+                    }
+                    @media (max-width: $breakpoint-md) {
+                        width: 100px;
+                        padding: 15px 10px;
+                        &-wrapper {
+                            div:first-child {
+                                .custom-btn-shape {
+                                    top: -6px !important;
+                                    left: 6px !important;
+                                }
+                            }
+                            div:last-child {
+                                .custom-btn-shape {
+                                    top: 7px !important;
+                                    right: 94px !important;
+                                }
+                            }
+                        }
+                        .custom-btn-shape-line {
+                            top: -7px;
+                            width: 20px;
+                            height: 1px;
+                            background: #a39366;
+                            position: absolute;
+                            left: 18px;
+                        }
+                        .custom-btn-shape-circle {
+                            width: 7px;
+                            height: 7px;
+                            border-radius: 50%;
+                            background: #a39366;
+                            position: absolute;
+                            top: -10px;
+                            left: 15px;
+                        }
+                        .custom-btn-shape-arrow {
+                            width: 0;
+                            height: 0;
+                            border-top: 4.5px solid transparent;
+                            border-left: 6px solid #a39366;
+                            border-bottom: 4.5px solid transparent;
+                            position: absolute;
+                            left: 34px;
+                            top: -11px;
+                        }
+                    }
+                }
+            }
+        }
+        &-right {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            flex: 0.55;
+            min-height: 550px !important;
+            transition: all 0.7s ease-in-out;
+        }
+    }
+    &-bottom {
+        flex: 0.1;
+        padding: 0;
+        li {
+            width: 200px !important;
+            height: 120px;
+
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+            &.__active.__target .item {
+                border: 4px solid $gold !important;
+            }
+        }
+        .item {
+            width: 200px !important;
+            height: 120px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    &-hLine {
+        height: 4px;
+        border-top: 4px dotted $gold;
+        width: 100%;
+        margin: 40px 0;
+    }
+}

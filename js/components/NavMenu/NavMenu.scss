@@ -1,0 +1,100 @@
+.navMenu {
+    width: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    @media (max-width: $breakpoint-md) {
+        height: 100vh;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 15;
+        position: relative;
+    }
+
+    &__list {
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        height: 60%;
+        opacity: inherit;
+
+        li a {
+            color: #b9a34b;
+            font-size: 80px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            float: right;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            font-family: BigShouldersStencilDisplay-Regular;
+            // padding-bottom: -25px !important ;
+            // margin-bottom: -35px !important;
+            line-height: 1.1;
+
+            &:hover {
+                color: white;
+                transition: all 0.3s ease-in-out;
+                border-bottom: 3px solid white;
+            }
+            @media (max-width: $breakpoint-lg) {
+                font-size: 50px;
+                line-height: 58px;
+            }
+        }
+    }
+
+    &__social-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 10%;
+        right: 11%;
+        width: 18rem;
+        color: white;
+        font-size: 1.3rem;
+        padding-left: 20px;
+        @media (max-width: $breakpoint-sm) {
+            bottom: 10%;
+        }
+
+        li {
+            float: right;
+        }
+
+        li:hover {
+            color: #b9a34b;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        @media (max-width: $breakpoint-xxs) {
+            right: 4%;
+        }
+    }
+}
+
+.active {
+    width: 50%;
+    position: absolute;
+    height: 100vh;
+    opacity: 1;
+    visibility: visible;
+    z-index: 4;
+    @media (max-width: $breakpoint-xl) {
+        width: 100% !important;
+        height: 100vh;
+    }
+}

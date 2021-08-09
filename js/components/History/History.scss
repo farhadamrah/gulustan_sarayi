@@ -1,0 +1,62 @@
+.history {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid $gold;
+    background: $gold;
+    position: relative;
+    top: -10px;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    transform: scale(1);
+    animation-duration: 0.4s;
+    @media (max-width: $breakpoint-lg) {
+        z-index: auto;
+        width: 34px;
+        height: 34px;
+    }
+    @keyframes history-scale {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(3.4);
+            @media (max-width: $breakpoint-lg) {
+                transform: scale(2.03);
+            }
+        }
+    }
+    @keyframes history-scale1 {
+        0% {
+            transform: scale(3.4);
+            @media (max-width: $breakpoint-lg) {
+                transform: scale(2.03);
+            }
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    &.history-selected {
+        border: 1px solid #898989;
+        box-shadow: 0 0 15px -5px $gold;
+        z-index: 2;
+        position: relative;
+        animation-name: history-scale;
+        @media (max-width: $breakpoint-md) {
+            z-index: 1;
+        }
+    }
+    &.prev-history {
+        border: 2px solid $gold;
+        box-shadow: none;
+        z-index: auto;
+        animation-name: history-scale1;
+    }
+}

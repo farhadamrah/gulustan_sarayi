@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "MessinaSerif-Book";
+    src: url("/fonts/MessinaSerif-Book.woff2") format("woff2"),
+        url("/fonts/MessinaSerif-Book.woff") format("woff"),
+        url("/fonts/MessinaSerif-Book.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "MessinaSerif-BoldItalic";
+    src: url("/fonts/MessinaSerif-BoldItalic.woff2") format("woff2"),
+        url("/fonts/MessinaSerif-BoldItalic.woff") format("woff"),
+        url("/fonts/MessinaSerif-BoldItalic.otf") format("otf");
+    font-weight: bold;
+    font-style: italic;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "MessinaSerif-Bold";
+    src: url("/fonts/MessinaSerif-Bold.woff2") format("woff2"),
+        url("/fonts/MessinaSerif-Bold.woff") format("woff"),
+        url("/fonts/MessinaSerif-Bold.otf") format("otf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "MessinaSerif-BookItalic";
+    src: url("/fonts/MessinaSerif-BookItalic.woff2") format("woff2"),
+        url("/fonts/MessinaSerif-BookItalic.woff") format("woff"),
+        url("/fonts/MessinaSerif-BookItalic.otf") format("otf");
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "MessinaSerif-SemiBold";
+    src: url("/fonts/MessinaSerif-SemiBold.woff2") format("woff2"),
+        url("/fonts/MessinaSerif-SemiBold.woff") format("woff"),
+        url("/fonts/MessinaSerif-SemiBold.otf") format("otf");
+    font-weight: 600;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "MessinaSerif-LightItalic";
+    src: url("/fonts/MessinaSerif-LightItalic.woff2") format("woff2"),
+        url("/fonts/MessinaSerif-LightItalic.woff") format("woff"),
+        url("/fonts/MessinaSerif-LightItalic.otf") format("otf");
+    font-weight: 300;
+    font-style: italic;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "MessinaSerif-RegularItalic";
+    src: url("/fonts/MessinaSerif-RegularItalic.woff2") format("woff2"),
+        url("/fonts/MessinaSerif-RegularItalic.woff") format("woff"),
+        url("/fonts/MessinaSerif-RegularItalic.otf") format("otf");
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "MessinaSerif-Regular";
+    src: url("/fonts/MessinaSerif-Regular.woff2") format("woff2"),
+        url("/fonts/MessinaSerif-Regular.woff") format("woff"),
+        url("/fonts/MessinaSerif-Regular.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "MessinaSerif-Light";
+    src: url("/fonts/MessinaSerif-Light.woff2") format("woff2"),
+        url("/fonts/MessinaSerif-Light.woff") format("woff"),
+        url("/fonts/MessinaSerif-Light.otf") format("otf");
+
+    font-weight: 300;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "MessinaSerif-SemiBoldItalic";
+    src: url("/fonts/MessinaSerif-SemiBoldItalic.woff2") format("woff2"),
+        url("/fonts/MessinaSerif-SemiBoldItalic.woff") format("woff"),
+        url("/fonts/MessinaSerif-SemiBoldItalic.otf") format("otf");
+    font-weight: 600;
+    font-style: italic;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+@font-face {
+    font-family: "PensumPro-Bold";
+    src: url("/fonts/PensumPro-Bold.woff2") format("woff2"),
+        url("/fonts/PensumPro-Bold.woff") format("woff"),
+        url("/fonts/PensumPro-Bold.otf") format("otf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "PensumPro-Light";
+    src: url("/fonts/PensumPro-Light.woff2") format("woff2"),
+        url("/fonts/PensumPro-Light.woff") format("woff"),
+        url("/fonts/PensumPro-Light.otf") format("otf");
+    font-weight: 300;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "PensumPro-Book";
+    src: url("/fonts/PensumPro-Book.woff2") format("woff2"),
+        url("/fonts/PensumPro-Book.woff") format("woff"),
+        url("/fonts/PensumPro-Book.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "PensumPro-Regular";
+    src: url("/fonts/PensumPro-Regular.woff2") format("woff2"),
+        url("/fonts/PensumPro-Regular.woff") format("woff"),
+        url("/fonts/PensumPro-Regular.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "PensumPro-MediumItalic";
+    src: url("/fonts/PensumPro-MediumItalic.woff2") format("woff2"),
+        url("/fonts/PensumPro-MediumItalic.woff") format("woff"),
+        url("/fonts/PensumPro-MediumItalic.otf") format("otf");
+    font-weight: 500;
+    font-style: italic;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "PensumPro-RegularItalic";
+    src: url("/fonts/PensumPro-RegularItalic.woff2") format("woff2"),
+        url("/fonts/PensumPro-RegularItalic.woff") format("woff"),
+        url("/fonts/PensumPro-RegularItalic.otf") format("otf");
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "PensumPro-Medium";
+    src: url("/fonts/PensumPro-Medium.woff2") format("woff2"),
+        url("/fonts/PensumPro-Medium.woff") format("woff"),
+        url("/fonts/PensumPro-Medium.otf") format("otf");
+
+    font-weight: 500;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "BigShouldersStencilDisplay-Regular";
+    src: url("/fonts/BigShouldersStencilDisplay-Regular.woff2") format("woff2"),
+        url("/fonts/BigShouldersStencilDisplay-Regular.woff") format("woff"),
+        url("/fonts/BigShouldersStencilDisplay-Regular.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "BigShouldersStencilDisplay-Medium";
+    src: url("/fonts/BigShouldersStencilDisplay-Medium.woff2") format("woff2"),
+        url("/fonts/BigShouldersStencilDisplay-Medium.woff") format("woff"),
+        url("/fonts/BigShouldersStencilDisplay-Medium.otf") format("otf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "BigShouldersStencilDisplay-Black";
+    src: url("/fonts/BigShouldersStencilDisplay-Black.woff2") format("woff2"),
+        url("/fonts/BigShouldersStencilDisplay-Black.woff") format("woff"),
+        url("/fonts/BigShouldersStencilDisplay-Black.otf") format("otf");
+    font-weight: 900;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "BigShouldersStencilDisplay-Bold";
+    src: url("/fonts/BigShouldersStencilDisplay-Bold.woff2") format("woff2"),
+        url("/fonts/BigShouldersStencilDisplay-Bold.woff") format("woff"),
+        url("/fonts/BigShouldersStencilDisplay-Bold.otf") format("otf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+    unicode-range: U+000-5FF;
+}

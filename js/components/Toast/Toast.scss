@@ -1,0 +1,65 @@
+//TODO: Modify Toast per theme
+.toast-container {
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+    width: 380px;
+    padding: 0 20px 25px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100% - 5.5rem);
+    /*z-index 1100 will help to make it visible during an open modal */
+    z-index: 1100;
+}
+.toast {
+    opacity: 1 !important;
+    -webkit-animation-name: animateToast;
+    animation-name: animateToast;
+    -webkit-animation-duration: 0.25s; /* Safari 4.0 - 8.0 */
+    animation-duration: 0.25s;
+    &-header {
+        background-color: hsl(44deg 25% 52%) !important;
+        strong {
+            font-family: PensumPro-Bold;
+            color: #fff;
+        }
+        small {
+            color: #fff;
+        }
+    }
+    &-body {
+        font-family: PensumPro-Bold;
+        background-color: #222222 !important;
+        color: #fff;
+    }
+}
+.toast .stop {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+.toast:hover .stop {
+    display: block;
+}
+.toast .stop:hover {
+    font-weight: 600;
+}
+.toast .rounded-circle {
+    width: 15px;
+    height: 15px;
+    margin-top: 0.1rem;
+}
+.toast ul {
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@keyframes animateToast {
+    from {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}

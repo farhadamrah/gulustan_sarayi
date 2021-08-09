@@ -1,0 +1,44 @@
+.statistics-container {
+    display: flex;
+    justify-content: center;
+}
+.hallImages {
+    padding: 50px 0 100px;
+    @media (max-width: $breakpoint-md) {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: $breakpoint-lg) {
+    .statistics-container {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+}
+
+.history-home-section {
+    position: relative;
+    top: 380px;
+    padding: 0 40px;
+    @media (max-width: $breakpoint-xl) {
+        padding: 0 20px;
+        top: 530px;
+    }
+    @media (max-width: $breakpoint-lg) {
+        padding: 0 20px;
+        top: 380px;
+    }
+    @media (max-width: $breakpoint-md) {
+        padding: 0 20px;
+        top: 530px;
+    }
+    @media (max-width: $breakpoint-sm) {
+        padding: 0 20px;
+        top: 530px;
+    }
+    @media (max-width: $breakpoint-xs) {
+        padding: 0 20px;
+        top: 515px;
+    }
+}
